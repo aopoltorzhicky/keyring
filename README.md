@@ -5,12 +5,12 @@ Library for key management
 
 ## Install binary
 ```bash
-go install https://github.com/aopoltorzhicky/keyring/cmd/go-keyring
+go install github.com/aopoltorzhicky/keyring/cmd/go-keyring
 ```
 
 ## Get package
 ```bash
-go get https://github.com/aopoltorzhicky/keyring
+go get github.com/aopoltorzhicky/keyring
 ```
 
 ## Usage binary
