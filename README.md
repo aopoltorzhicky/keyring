@@ -39,3 +39,26 @@ Set(service, user, password string) error
 Get(service, user string) (string, error)
 Delete(service, user string) error
 ```
+
+Code example
+
+```go
+keyringPassword := []byte("keyringPassword")
+if err := keyring.Create(keyringPassword); err != nil {
+    log.Panic().Err(err).Msg("error during creating keyring")
+}
+
+if err := keyring.Keys.Set("service", "username", "password"); err != nil {
+    log.Panic().Err(err).Msg("error during setting password")
+}
+
+password, err := keyring.Keys.Get("service", "username")
+if err != nil {
+    log.Panic().Err(err).Msg("error during getting password")
+}
+log.Print(password)
+
+if err := keyring.Keys.Delete("service", "username"); err != nil {
+    log.Panic().Err(err).Msg("error during deleting password")
+}
+```
