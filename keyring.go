@@ -74,7 +74,6 @@ func Create(secret []byte) error {
 		}
 	}
 
-	Keys.key = secret
 	return nil
 }
 
