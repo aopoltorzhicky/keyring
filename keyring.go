@@ -17,7 +17,7 @@ import (
 )
 
 const (
-	file = ".local/share/robots_keyring/keyring.yaml"
+	file = ".local/share/go_keyring/keyring.yaml"
 )
 
 var Keys *File
