@@ -5,7 +5,7 @@ Library for key management
 
 ## Install binary
 ```bash
-go install https://github.com/aopoltorzhicky/keyring
+go install https://github.com/aopoltorzhicky/keyring/cmd/go-keyring
 ```
 
 ## Get package
@@ -17,17 +17,17 @@ go get https://github.com/aopoltorzhicky/keyring
 
 ```bash
 # set key
-keyring set
+go-keyring set
 ```
 
 ```bash
 # get key
-keyring get
+go-keyring get
 ```
 
 ```bash
 # remove key
-keyring delete
+go-keyring delete
 ```
 
 ## Usage libary
