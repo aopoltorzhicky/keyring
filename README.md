@@ -5,7 +5,7 @@ Library for key management
 
 ## Install binary
 ```bash
-go install github.com/aopoltorzhicky/keyring/cmd/go-keyring
+go install github.com/aopoltorzhicky/keyring/cmd/go-keyring@latest
 ```
 
 ## Get package
